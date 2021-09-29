@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+     dateObjt = new Date ();
+     MesAtual = dateObjt.getUTCMonth() +1;
+     DiaAtual = dateObjt.getUTCDate();
+     AnoAtual = dateObjt.getUTCFullYear();
+
+    // INICIO
+    nome = window.prompt("Qual o seu nome ?")
+    AnoNasc = window.prompt("Qual o seu ano de nascimento, "+nome+"?")
+    idade = AnoAtual - AnoNasc;
+
+    if (idade > 18){
+        NomeEvento = window.prompt("Digite o nome do evento");
+        AnoEvento = window.prompt("Digite o ano do evento");
+        if (AnoEvento == AnoAtual){
+            MesEvento = window.prompt("Digite o mês do seu evento: ");
+        if (MesEvento == MesAtual){
+            DiaEvento = window.prompt("Digite o dia do seu evento: ");
+        if (DiaEvento > DiaAtual){
+            alert ("Cadastro de evento concluído");
+        }else{
+            alert("Inválido");
+        }}} 
+
+        }else{
+        MesNasc = window.prompt("Qual seu mês de nascimento, "+nome+"?")
+        if (MesNasc > MesAtual){
+            NomeEvento = window.prompt("Digite o nome do evento");
+        }else{
+            alert("Erro: É necessário ter 18 anos");
+            
+        }          
+    }
+
+    
+
+    </script>
+</body>
+</html>
